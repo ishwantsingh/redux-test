@@ -46,7 +46,11 @@ class App extends React.Component {
           <div>
             {this.props.movies &&
               this.props.movies.map(movie => {
-                return <div key={movie.id}>{movie.title} </div>;
+                return (
+                  <div key={movie.id}>
+                    {movie.title} : {movie.releaseYear}
+                  </div>
+                );
                 // <div>
                 //   <h1>{movie.title}</h1> <h2>{movie.releaseYear}</h2>
                 // </div>;
