@@ -48,7 +48,7 @@ class App extends React.Component {
               this.props.movies.map(movie => {
                 return (
                   <div key={movie.id}>
-                    {movie.title} : {movie.releaseYear}
+                    {movie.id}:{movie.title} : {movie.releaseYear}
                   </div>
                 );
                 // <div>
