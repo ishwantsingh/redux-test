@@ -36,11 +36,12 @@ class App extends React.Component {
         <div>
           <Button onClick={this.submitHandler}>Like me ples</Button>
         </div>
+        <div>{this.props.likes}</div>
         {/* </form> */}
         <div>
           <button onClick={this.infoHandler}> get info</button>
         </div>
-        <div>{this.props.likes}</div>
+
         <div>
           movies:
           <div>
@@ -48,7 +49,8 @@ class App extends React.Component {
               this.props.movies.map(movie => {
                 return (
                   <div key={movie.id}>
-                    {movie.id}:{movie.title} : {movie.releaseYear}
+                    {movie.id}
+                    {""}:{movie.title} : {movie.releaseYear}
                   </div>
                 );
                 // <div>
