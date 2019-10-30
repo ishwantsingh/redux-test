@@ -56,6 +56,7 @@ class App extends React.Component {
                 // <div>
                 //   <h1>{movie.title}</h1> <h2>{movie.releaseYear}</h2>
                 // </div>;
+                // commented title and release year
               })}
           </div>
         </div>
