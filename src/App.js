@@ -31,13 +31,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <form onClick={this.submitHandler}> */}
-        {/* <Button onClick={this.increaseLikes}>Like me ples</Button> */}
         <div>
           <Button onClick={this.submitHandler}>Like me ples</Button>
         </div>
         <div>{this.props.likes}</div>
-        {/* </form> */}
         <div>
           <button onClick={this.infoHandler}> get info</button>
         </div>
@@ -53,10 +50,6 @@ class App extends React.Component {
                     {""}:{movie.title} : {movie.releaseYear}
                   </div>
                 );
-                // <div>
-                //   <h1>{movie.title}</h1> <h2>{movie.releaseYear}</h2>
-                // </div>;
-                // commented title and release year
               })}
           </div>
         </div>
@@ -64,14 +57,6 @@ class App extends React.Component {
     );
   }
 }
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     likeAction: (clicked, likes) => {
-//       dispatch(likeAction(clicked, likes));
-//     }
-//   };
-// }
 
 function mapDispatchToProps(dispatch) {
   return {
